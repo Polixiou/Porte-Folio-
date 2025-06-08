@@ -3,71 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Portfolio BTS SIO</title>
     <link rel="stylesheet" href="style.css">
-    <!--<script defer src="script.js"></script> A remmetre quand j'aurais besoins de faire du js-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">MonPortfolio</div>
-        <ul class="nav-links">
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#veilles">Veilles</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#epreuve">Epreuve E4</a></li>
-        </ul>
+        <div class="container">
+            <div class="logo">Portfolio BTS SIO</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#languages">Langages</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#internships">Stages</a></li>
+                <li><a href="#veille">Veille</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
 
     <!-- Section Accueil -->
-    <header id="home">
+    <section id="home" class="hero">
         <div class="container">
-            <div id="photo" class="circle">
-                <img src="./Portfolio_files/pdp.jpg" alt="Photo de profil" id="pdp">
-            </div><br>
-            <h1>Salut, je suis <span class="highlight">Pedro BELLEC</span></h1>
-            <p>Développeur Web & Logiciel en Devenir</p>
-            <a href="competence.html" class="btn">Voir la grille de compétences</a>
-        </div>
-    </header>
-
-    <!-- Section À Propos -->
-    <section id="about">
-        <div class="container">
-            <h2>À propos de moi</h2>
-            <p>Ici, tu peux écrire un texte de présentation sur toi et ton parcours.</p>
+            <div class="profile-image">
+                <img src="https://via.placeholder.com/160" alt="Photo de profil">
+            </div>
+            <h1>Bonjour, je m'appelle <span class="highlight">Pedro BELLEC</span></h1>
+            <p class="subtitle">Développeur Web & Logiciel en Devenir</p>
+            <p class="info">20 ans • BTS SIO SLAM 2ème année</p>
         </div>
     </section>
 
-    <!-- Section Projets -->
-    <section id="projects">
+    <!-- Section À propos -->
+    <section id="about" class="about">
         <div class="container">
-            <h2>Mes Projets</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-img"></div>
-                    <h3>Projet 1</h3>
-                    <p>Description rapide du projet.</p>
+            <h2>À propos de moi</h2>
+            <div class="about-content">
+                <p>
+                    Étudiant passionné en BTS SIO option SLAM, je me spécialise dans le développement d'applications et de
+                    solutions logicielles. Mon parcours m'a permis d'acquérir des compétences solides en programmation et en
+                    gestion de projets informatiques.
+                </p>
+                <p>
+                    Toujours curieux d'apprendre de nouvelles technologies, je m'efforce de rester à jour avec les dernières
+                    tendances du développement web et mobile. Mon objectif est de devenir un développeur full-stack compétent
+                    et polyvalent.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Mes Compétences</h2>
+            <button class="btn" id="competences-btn">Voir mon tableau de compétences</button>
+        </div>
+    </section>
+
+    <!-- Modal pour le tableau de compétences -->
+    <div id="competences-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Tableau de Compétences BTS SIO</h3>
+            <img src="https://via.placeholder.com/800x600" alt="Tableau de compétences" class="competences-img">
+        </div>
+    </div>
+
+    <!-- Section Langages -->
+    <section id="languages" class="languages">
+        <div class="container">
+            <h2>Langages & Technologies</h2>
+            <div class="languages-grid">
+                <div class="language-card">
+                    <img src="https://via.placeholder.com/60" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                    <span class="badge">Avancé</span>
                 </div>
-                <div class="project-card">
-                    <div class="project-img"></div>
-                    <h3>Projet 2</h3>
-                    <p>Description rapide du projet.</p>
+                <div class="language-card">
+                    <img src="https://via.placeholder.com/60" alt="Python">
+                    <h3>Python</h3>
+                    <span class="badge">Intermédiaire</span>
+                </div>
+                <div class="language-card">
+                    <img src="https://via.placeholder.com/60" alt="Java">
+                    <h3>Java</h3>
+                    <span class="badge">Intermédiaire</span>
+                </div>
+                <div class="language-card">
+                    <img src="https://via.placeholder.com/60" alt="PHP">
+                    <h3>PHP</h3>
+                    <span class="badge">Débutant</span>
+                </div>
+                <div class="language-card">
+                    <img src="https://via.placeholder.com/60" alt="HTML/CSS">
+                    <h3>HTML/CSS</h3>
+                    <span class="badge">Avancé</span>
+                </div>
+                <div class="language-card">
+                    <img src="https://via.placeholder.com/60" alt="React">
+                    <h3>React</h3>
+                    <span class="badge">Intermédiaire</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Contact -->
-    <section id="contact">
+    <!-- Section Projets -->
+    <section id="projects" class="projects">
         <div class="container">
-            <h2>Me Contacter</h2>
-            <p>Tu peux me contacter par email ou via mes réseaux sociaux.</p>
+            <h2>Mes Projets</h2>
+
+            <!-- Projets Personnels -->
+            <div class="project-category">
+                <h3>Projets Personnels</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x200" alt="Site E-commerce">
+                        <h4>Site E-commerce</h4>
+                        <p>Développement d'un site de vente en ligne avec panier et paiement</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x200" alt="Application Mobile">
+                        <h4>Application Mobile</h4>
+                        <p>App de gestion de tâches avec synchronisation cloud</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projets de Cours -->
+            <div class="project-category">
+                <h3>Projets de Cours</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x200" alt="Système de Gestion">
+                        <h4>Système de Gestion</h4>
+                        <p>Application de gestion d'inventaire pour une entreprise</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x200" alt="Site Web Vitrine">
+                        <h4>Site Web Vitrine</h4>
+                        <p>Création d'un site vitrine responsive pour une association</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Section Stages -->
+    <section id="internships" class="internships">
+        <div class="container">
+            <h2>Mes Stages</h2>
+            <div class="internships-list">
+                <div class="internship-card">
+                    <div class="internship-header">
+                        <img src="https://via.placeholder.com/80" alt="TechCorp Solutions">
+                        <div>
+                            <h3>TechCorp Solutions</h3>
+                            <p class="period">Mai - Juillet 2024</p>
+                        </div>
+                    </div>
+                    <div class="internship-content">
+                        <p>
+                            Stage de développement web où j'ai participé à la création d'une application de gestion client. 
+                            J'ai travaillé sur le frontend avec React et appris les bonnes pratiques de développement en équipe.
+                        </p>
+                        <h4>Projets réalisés :</h4>
+                        <ul>
+                            <li>Interface utilisateur responsive</li>
+                            <li>Intégration API REST</li>
+                            <li>Tests unitaires</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="internship-card">
+                    <div class="internship-header">
+                        <img src="https://via.placeholder.com/80" alt="Digital Innovation">
+                        <div>
+                            <h3>Digital Innovation</h3>
+                            <p class="period">Janvier - Mars 2024</p>
+                        </div>
+                    </div>
+                    <div class="internship-content">
+                        <p>
+                            Premier stage axé sur le développement d'applications mobiles. J'ai découvert React Native 
+                            et participé au développement d'une application de suivi de commandes.
+                        </p>
+                        <h4>Projets réalisés :</h4>
+                        <ul>
+                            <li>Application mobile</li>
+                            <li>Base de données SQLite</li>
+                            <li>Interface administrateur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Veille Technologique -->
+    <section id="veille" class="veille">
+        <div class="container">
+            <h2>Veille Technologique</h2>
+            <p>
+                Ma veille technologique porte sur les dernières tendances en développement web, 
+                les nouveaux frameworks JavaScript, et l'évolution des pratiques DevOps.
+            </p>
+            <a href="#" class="btn download-btn">
+                <i class="fas fa-download"></i> Télécharger ma veille technologique
+            </a>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact & CV</h2>
+            <div class="contact-grid">
+                <!-- CV -->
+                <div class="contact-cv">
+                    <h3>Mon CV</h3>
+                    <p>Téléchargez mon CV pour découvrir mon parcours complet et mes expériences.</p>
+                    <a href="#" class="btn download-btn">
+                        <i class="fas fa-download"></i> Télécharger mon CV
+                    </a>
+                </div>
+
+                <!-- Réseaux Sociaux -->
+                <div class="contact-social">
+                    <h3>Mes Réseaux</h3>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/pedro-bellec" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/pedro-bellec" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:pedro.bellec@email.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> pedro.bellec@email.com</p>
+                        <p><i class="fas fa-phone"></i> +33 6 12 34 56 78</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
