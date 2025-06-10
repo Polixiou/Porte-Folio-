@@ -231,6 +231,33 @@ section h2::after {
   margin-top: 20px;
 }
 
+/* Styles pour le PDF dans la modal */
+.pdf-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pdf-container embed {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.pdf-fallback {
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.pdf-fallback a {
+  margin-top: 10px;
+}
+
+/* Ajuster la taille de la modal pour le PDF */
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
 /* Section Langages */
 .languages {
   background-color: rgba(255, 255, 255, 0.05);
@@ -468,6 +495,14 @@ section h2::after {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .pdf-container embed {
+    height: 400px;
+  }
+
+  .modal-content {
+    margin: 2% auto;
+    padding: 20px;
+  }
   .nav-links {
     display: none;
     position: absolute;

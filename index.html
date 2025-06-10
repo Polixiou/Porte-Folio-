@@ -47,14 +47,10 @@
             <h2>À propos de moi</h2>
             <div class="about-content">
                 <p>
-                    Étudiant passionné en BTS SIO option SLAM, je me spécialise dans le développement d'applications et de
-                    solutions logicielles. Mon parcours m'a permis d'acquérir des compétences solides en programmation et en
-                    gestion de projets informatiques.
+                    Perdu en classe de première, j’ai découvert par hasard l’option SIG en filière STMG, ce qui m’a permis de faire mes premiers pas dans le monde du développement. Cette initiation a été un véritable déclic. En fin d’année, au moment de choisir une orientation, cette première expérience m’a naturellement conduit vers le BTS SIO. J’y ai approfondi mes connaissances en informatique, aussi bien du côté des réseaux (SISR) que du développement (SLAM). Après un semestre, j’ai choisi de m’orienter vers l’option SLAM, celle qui me correspondait le plus par son aspect créatif et technique.
                 </p>
                 <p>
-                    Toujours curieux d'apprendre de nouvelles technologies, je m'efforce de rester à jour avec les dernières
-                    tendances du développement web et mobile. Mon objectif est de devenir un développeur full-stack compétent
-                    et polyvalent.
+                    Aujourd’hui, après deux années d’apprentissage, je suis convaincu que l’informatique est un domaine qui me passionne. Ce parcours m’a permis de gagner en compétences, en confiance, et de mieux me connaître. Je souhaite désormais continuer à progresser et à évoluer dans cet univers en constante évolution, où la curiosité, l’autonomie et la créativité ont toute leur place.
                 </p>
             </div>
         </div>
@@ -68,12 +64,13 @@
         </div>
     </section>
 
-    <!-- Modal pour le tableau de compétences -->
     <div id="competences-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <h3>Tableau de Compétences BTS SIO</h3>
-            <img src="../image/jva.png" alt="Tableau de compétences" class="competences-img">
+            
+            <!-- Option 1: Embed PDF directement -->
+            <embed src="../image/tableau.pdf" type="application/pdf" width="100%" height="600px" />
         </div>
     </div>
 
@@ -106,6 +103,18 @@
                     <img src="../image/sql.jpg" alt="SQL">
                     <h3>SQL</h3>
                 </div>
+                <div class="language-card">
+                    <img src="../image/visual.png" alt="Visual">
+                    <h3>Visual Studio Code</h3>
+                </div>
+                <div class="language-card">
+                    <img src="../image/oracle.png" alt="Oracle">
+                    <h3>Oracle</h3>
+                </div>
+                <div class="language-card">
+                    <img src="../image/wordpress.png" alt="WordPress">
+                    <h3>WordPress</h3>
+                </div>
             </div>
         </div>
     </section>
@@ -115,7 +124,7 @@
         <div class="container">
             <h2>Mes Projets</h2>
 
-            <!-- Projets Personnels -->
+            <!-- Projets Personnels 
             <div class="project-category">
                 <h3>Projets Personnels</h3>
                 <div class="projects-grid">
@@ -139,29 +148,30 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
             <!-- Projets de Cours -->
             <div class="project-category">
                 <h3>Projets de Cours</h3>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <img src="https://via.placeholder.com/300x200" alt="Système de Gestion">
-                        <h4>Système de Gestion</h4>
-                        <p>Application de gestion d'inventaire pour une entreprise</p>
+                        <img src="../image/PHP-logo.svg.png" alt="Système de Gestion">
+                        <h4>Site Vitrine et de Gestion</h4>
+                        <p>Creation site de gestion d'inventaire pour une association et vitrine pour les visiteurs</p>
                         <div class="tech-tags">
-                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">PHP</span>
                             <span class="tech-tag">MySQL</span>
                         </div>
                     </div>
                     <div class="project-card">
-                        <img src="https://via.placeholder.com/300x200" alt="Site Web Vitrine">
-                        <h4>Site Web Vitrine</h4>
-                        <p>Création d'un site vitrine responsive pour une association</p>
+                        <img src="../image/jva.png" alt="Site Web Vitrine">
+                        <h4>Apllication gestion Hôtel</h4>
+                        <p>Application de gestion des reservations pour les chambres d'un hôtel</p>
                         <div class="tech-tags">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">MySQL</span>
                         </div>
                     </div>
                 </div>
@@ -176,44 +186,48 @@
             <div class="internships-list">
                 <div class="internship-card">
                     <div class="internship-header">
-                        <img src="https://via.placeholder.com/80" alt="TechCorp Solutions">
+                        <img src="../image/camif.svg" alt="TechCorp Solutions">
                         <div>
-                            <h3>TechCorp Solutions</h3>
-                            <p class="period">Mai - Juillet 2024</p>
+                            <h3>CAMIF</h3>
+                            <p class="period">Mai - Juin 2024</p>
                         </div>
                     </div>
                     <div class="internship-content">
                         <p>
-                            Stage de développement web où j'ai participé à la création d'une application de gestion client. 
-                            J'ai travaillé sur le frontend avec React et appris les bonnes pratiques de développement en équipe.
+                            Stage de développement où j'ai eu la mission de crée une application de modification automatique via Chatgpt et son API 
+                            J'ai travaillé sur le frontend avec HTML/CSS et JS et le système en PHP.
                         </p>
                         <h4>Projets réalisés :</h4>
                         <ul>
-                            <li>Interface utilisateur responsive</li>
-                            <li>Intégration API REST</li>
-                            <li>Tests unitaires</li>
+                            <li>Interface utilisateur</li>
+                            <li>Pourvoir lire un fichier precis et le décomposé</li>
+                            <li>Condition pour cree les requetes</li>
+                            <li>Evoie et recuperation des reponses avec Chatgpt</li>
+                            <li>Creation d'un nouveau fichier avec les bonnes modification et le prompt envoyé</li>
+                            <li>Tests</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="internship-card">
                     <div class="internship-header">
-                        <img src="https://via.placeholder.com/80" alt="Digital Innovation">
+                        <img src="../image/beti.jgp" alt="Digital Innovation">
                         <div>
-                            <h3>Digital Innovation</h3>
-                            <p class="period">Janvier - Mars 2024</p>
+                            <h3>Bidouilles et Informatique</h3>
+                            <p class="period">Janvier - Mars 2025</p>
                         </div>
                     </div>
                     <div class="internship-content">
                         <p>
-                            Premier stage axé sur le développement d'applications mobiles. J'ai découvert React Native 
-                            et participé au développement d'une application de suivi de commandes.
+                            Stage de développement axé sur le refont du site internet de l'association.
+                            J'ai travaillé en binome pour ce projet sur wordpress avec PHP/HTML/CSS et JavaScript ainsi que les plugin mis a disposition par wordpress
                         </p>
                         <h4>Projets réalisés :</h4>
                         <ul>
-                            <li>Application mobile</li>
-                            <li>Base de données SQLite</li>
-                            <li>Interface administrateur</li>
+                            <li>Démontage et remontage d'outil</li>
+                            <li>Cahier des charges et repartition des point a voir</li>
+                            <li>Realisation du cahier des charges</li>
+                            <li>Responsive pour les telephones</li>
                         </ul>
                     </div>
                 </div>
@@ -221,7 +235,7 @@
         </div>
     </section>
 
-    <!-- Section Veille Technologique -->
+    <!-- Section Veille Technologique 
     <section id="veille" class="veille">
         <div class="container">
             <h2>Veille Technologique</h2>
@@ -233,7 +247,7 @@
                 <i class="fas fa-download"></i> Télécharger ma veille technologique
             </a>
         </div>
-    </section>
+    </section> -->
 
     <!-- Section Contact -->
     <section id="contact" class="contact">
@@ -244,8 +258,8 @@
                 <div class="contact-cv">
                     <h3>Mon CV</h3>
                     <p>Téléchargez mon CV pour découvrir mon parcours complet et mes expériences.</p>
-                    <a href="#" class="btn download-btn">
-                        <i class="fas fa-download"></i> Télécharger mon CV
+                    <a href="../image/PedroBELLEC-CV.pdf" class="btn download-btn" download>
+                    <i class="fas fa-download"></i> Télécharger mon CV
                     </a>
                 </div>
 
@@ -253,19 +267,19 @@
                 <div class="contact-social">
                     <h3>Mes Réseaux</h3>
                     <div class="social-icons">
-                        <a href="https://linkedin.com/in/pedro-bellec" target="_blank">
+                        <a href="https://www.linkedin.com/in/pedro-bellec-3831922a4/" target="_blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://github.com/pedro-bellec" target="_blank">
+                        <a href="https://github.com/Polixiou" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="mailto:pedro.bellec@email.com">
+                        <a href="mailto:bellecpedro@gmail.com">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
                     <div class="contact-info">
-                        <p><i class="fas fa-envelope"></i> pedro.bellec@email.com</p>
-                        <p><i class="fas fa-phone"></i> +33 6 12 34 56 78</p>
+                        <p><i class="fas fa-envelope"></i> bellecpedro@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +33 6 13 29 48 02</p>
                     </div>
                 </div>
             </div>
